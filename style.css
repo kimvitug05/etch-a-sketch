@@ -1,0 +1,74 @@
+.root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Orbitron', cursive;
+    color: #11b9e4;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Orbitron', cursive;
+    color: #5bca11;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-rows), 1fr);
+    grid-template-rows: repeat(var(--grid-cols), 1fr);
+    height: 550px;
+    width: 550px;
+    background-image: linear-gradient(#11b9e4, #5bca11);
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    border-radius: 15%;
+    background-color: rgb(20, 18, 18);
+    padding: 5px;
+}
+
+.show-me:hover {
+    background-color: transparent;
+    border: none;
+}
+
+#change-color:hover {
+    color: transparent;
+}
+
+.btn {    
+    color: #52C11F;
+    border-color: #52C11F;
+    font-family: 'Orbitron', cursive;
+    display: inline-block;
+    margin: 6px;
+    font-size: 15px;
+    line-height: 1.42;
+    padding: 0.7em 1.4em;
+    border-width: 3px;
+    border-style: solid;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: bottom;
+    position: relative;
+    transform: translate(0.5em -0.4em);
+    transition: transform 0.2s;
+    outline: none;
+}
